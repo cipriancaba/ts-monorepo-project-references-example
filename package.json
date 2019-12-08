@@ -1,0 +1,22 @@
+{
+  "name": "ts-monorepo-project-references-example",
+  "version": "1.0.0",
+  "description": "typescript example project with yarn workspaces, lerna and project references setup",
+  "main": "index.js",
+  "author": "Ciprian Caba <caba.ciprian@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "start:api": "lerna run start --scope=@mono/api --stream",
+    "start:app": "lerna run start --scope=@mono/app --stream",
+    "start": "lerna run start --scope=@mono/api --scope=@mono/app --parallel"
+  },
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.19.0",
+    "typescript": "^3.7.3"
+  }
+}

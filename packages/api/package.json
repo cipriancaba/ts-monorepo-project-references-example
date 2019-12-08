@@ -1,0 +1,14 @@
+{
+  "name": "@mono/api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@mono/shared": "1.0.0"
+  },
+  "scripts": {
+    "build": "tsc --build --preserveWatchOutput",
+    "start": "yarn build --watch"
+  }
+}
