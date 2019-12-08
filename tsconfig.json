@@ -3,7 +3,8 @@
   "references": [
     { "path": "packages/shared" },
     { "path": "packages/app" },
-    { "path": "packages/api" }
+    { "path": "packages/api" },
+    { "path": "packages/react-app" }
   ],
   "files": []
 }

@@ -5,7 +5,7 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "dependencies": {
-    "@mono/shared": "1.0.0"
+    "@mono/shared": "*"
   },
   "scripts": {
     "build": "tsc --build --preserveWatchOutput",

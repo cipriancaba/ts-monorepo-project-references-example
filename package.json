@@ -12,7 +12,8 @@
     "build": "lerna run build --parallel",
     "start:api": "lerna run start --scope=@mono/api --stream",
     "start:app": "lerna run start --scope=@mono/app --stream",
-    "start": "lerna run start --scope=@mono/api --scope=@mono/app --parallel"
+    "start:react": "lerna run start --scope=@mono/react-app --scope=@mono/shared --parallel",
+    "start": "lerna run start --scope=@mono/api --scope=@mono/app --scope=@mono/react-app --scope=@mono/shared --parallel"
   },
   "private": true,
   "devDependencies": {
