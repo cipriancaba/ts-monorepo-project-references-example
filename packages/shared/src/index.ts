@@ -9,6 +9,4 @@ export const SHARED_CONFIG = {
   MONO: 'REPO',
 };
 
-export function sum(a: number, b: number): number {
-  return a + b;
-}
+export * from './math';

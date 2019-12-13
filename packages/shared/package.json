@@ -7,6 +7,10 @@
   "scripts": {
     "build": "tsc --build --preserveWatchOutput",
     "start": "yarn build --watch",
-    "clean": "rm -rf dist *.tsbuildinfo"
+    "clean": "rm -rf dist *.tsbuildinfo",
+    "test": "jest"
+  },
+  "dependencies": {
+    "ts-jest": "24.2.0"
   }
 }
