@@ -26,4 +26,4 @@ build
 
 tmp
 
-tsconfig.tsbuildinfo
+*.tsbuildinfo

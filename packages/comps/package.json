@@ -8,7 +8,7 @@
     "@mono/shared": "*"
   },
   "scripts": {
-    "build": "tsc --build --preserveWatchOutput",
+    "build": "tsc --build tsconfig-build.json --preserveWatchOutput",
     "start": "yarn build --watch",
     "clean": "rm -rf dist *.tsbuildinfo",
     "test": "react-scripts test"
