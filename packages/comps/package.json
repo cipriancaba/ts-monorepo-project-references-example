@@ -10,6 +10,7 @@
   "scripts": {
     "build": "tsc --build --preserveWatchOutput",
     "start": "yarn build --watch",
-    "clean": "rm -rf dist *.tsbuildinfo"
+    "clean": "rm -rf dist *.tsbuildinfo",
+    "test": "react-scripts test"
   }
 }

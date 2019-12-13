@@ -14,7 +14,8 @@
     "start:app": "lerna run start --scope=@mono/app --stream",
     "start:react": "lerna run start --scope=@mono/react-app --scope=@mono/shared --scope=@mono/comps --parallel",
     "start": "lerna run start --scope=@mono/api --scope=@mono/app --scope=@mono/react-app --scope=@mono/shared --scope=@mono/comps --parallel",
-    "clean": "lerna run clean --parallel"
+    "clean": "lerna run clean --parallel",
+    "test": "CI=1 lerna run test --parallel"
   },
   "private": true,
   "devDependencies": {

@@ -23,9 +23,7 @@ const App: React.FC = () => {
           Learn React
         </a>
         <p>Is shared: {SHARED_CONFIG.SHARED}</p>
-        <p>
-          <CompOne />
-        </p>
+        <CompOne />
         <LegacyComp />
       </header>
     </div>
