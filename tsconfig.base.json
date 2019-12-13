@@ -9,7 +9,8 @@
     "moduleResolution": "node",
     "target": "es6",
     "jsx": "preserve",
-    "lib": ["es6"]
+    "lib": ["es6"],
+    "skipLibCheck": true
   },
   "exclude": ["node_modules"]
 }
