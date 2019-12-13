@@ -19,7 +19,12 @@ const App: React.FC = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>I SEE MONOREPOS</p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Learn React
         </a>
         <p>Is shared: {SHARED_CONFIG.SHARED}</p>
