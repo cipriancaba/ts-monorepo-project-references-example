@@ -9,7 +9,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build --parallel",
+    "build:leaf": "lerna run build --scope @mono/api --scope @mono/react-app --scope @mono/app --parallel",
+    "build": "lerna run build --scope @mono/shared && lerna run build --scope @mono/comps && yarn build:leaf",
     "start:api": "lerna run start --scope=@mono/api --stream",
     "start:app": "lerna run start --scope=@mono/app --stream",
     "start:react": "lerna run start --scope=@mono/react-app --scope=@mono/shared --scope=@mono/comps --parallel",
