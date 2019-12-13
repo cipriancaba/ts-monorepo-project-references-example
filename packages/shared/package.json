@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --build --preserveWatchOutput",
-    "start": "yarn build --watch"
+    "start": "yarn build --watch",
+    "clean": "rm -rf dist *.tsbuildinfo"
   }
 }
