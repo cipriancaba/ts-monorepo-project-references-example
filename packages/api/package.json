@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "license": "MIT",
   "dependencies": {
     "@mono/shared": "*"
   },
   "scripts": {
     "build": "tsc --build --preserveWatchOutput",
-    "start": "yarn build --watch",
+    "start": "node --experimental-modules dist/index.js",
+    "build:watch": "yarn build --watch",
     "clean": "rm -rf dist *.tsbuildinfo"
   }
 }
