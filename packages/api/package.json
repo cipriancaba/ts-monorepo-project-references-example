@@ -9,6 +9,8 @@
   },
   "scripts": {
     "build": "tsc --build --preserveWatchOutput",
-    "start": "yarn build --watch"
+    "start": "node dist/index.js",
+    "build:watch": "yarn build --watch",
+    "clean": "rm -rf dist *.tsbuildinfo"
   }
 }

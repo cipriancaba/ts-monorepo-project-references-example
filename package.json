@@ -9,15 +9,26 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build --parallel",
+    "build:leaf": "lerna run build --scope @mono/api --scope @mono/react-app --scope @mono/app --parallel",
+    "build": "lerna run build --scope @mono/shared && lerna run build --scope @mono/comps && yarn build:leaf",
     "start:api": "lerna run start --scope=@mono/api --stream",
     "start:app": "lerna run start --scope=@mono/app --stream",
-    "start:react": "lerna run start --scope=@mono/react-app --scope=@mono/shared --parallel",
-    "start": "lerna run start --scope=@mono/api --scope=@mono/app --scope=@mono/react-app --scope=@mono/shared --parallel"
+    "start:react": "lerna run start --scope=@mono/react-app --scope=@mono/shared --scope=@mono/comps --parallel",
+    "start": "lerna run start --scope=@mono/api --scope=@mono/app --scope=@mono/react-app --scope=@mono/shared --scope=@mono/comps --parallel",
+    "clean": "lerna run clean --parallel",
+    "test": "CI=1 lerna run test --parallel"
   },
   "private": true,
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.11.0",
+    "@typescript-eslint/parser": "2.11.0",
+    "eslint": "6.7.2",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-import": "2.19.1",
+    "eslint-plugin-prettier": "3.1.1",
     "lerna": "^3.19.0",
+    "prettier": "1.19.1",
     "typescript": "^3.7.3"
   }
 }

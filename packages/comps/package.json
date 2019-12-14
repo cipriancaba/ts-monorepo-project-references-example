@@ -1,5 +1,5 @@
 {
-  "name": "@mono/app",
+  "name": "@mono/comps",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,9 +8,9 @@
     "@mono/shared": "*"
   },
   "scripts": {
-    "build": "tsc --build --preserveWatchOutput",
+    "build": "tsc --build tsconfig-build.json --preserveWatchOutput",
     "start": "yarn build --watch",
     "clean": "rm -rf dist *.tsbuildinfo",
-    "test": "jest"
+    "test": "react-scripts test"
   }
 }
