@@ -9,4 +9,4 @@ export const SHARED_CONFIG = {
   MONO: 'REPO',
 };
 
-export * from './math';
+export * from './math.js';
